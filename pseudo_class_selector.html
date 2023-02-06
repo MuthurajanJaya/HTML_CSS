@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        /* unvisited link */
+        a:link {
+        color: red;
+        }
+
+        /* visited link */
+        a:visited {
+        color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+        color: blue;
+        }
+
+        a.highlight:hover{
+            color: red;
+            font-size: 300%;
+        }
+        p:hover{
+            background-color: aqua;
+            color: black;
+            padding: 25px;
+            text-align: center;
+        }
+        p:first-child{
+            color: blue;
+        }
+        div{
+            text-align: center;
+        }
+        div:hover p{
+            
+            display: block;
+        }
+        
+        div:hover:active{
+            color: black;
+        }
+        div:hover:not(:active){
+            color: blue;
+        }
+        h1 i:first-of-type{
+            color: blueviolet;
+        }
+        .arena{
+            text-align: left;
+        }
+        .arena:hover{
+            text-align:left;
+        }
+        .arena p:first-child i{
+            color: tomato;
+        }
+        .arena p::first-line{
+            background-color: blanchedalmond;
+            color: limegreen;
+            font-variant: small-caps
+        }
+        p.intro::first-letter{
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        q:lang(no){
+            quotes: "~" "~";
+        }
+</style>
+</head>
+<body>
+    <h2>Styling a link depending on state</h2>
+        <b><a href="http://127.0.0.1:5500/attribute_selectors.html" target="_blank">This is a link</a></b><br>
+        <b><a class="highlight" href="http://127.0.0.1:5500/attribute_selectors.html" target="_blank">This is a link</a></b>
+        <div>Mouse Over Me
+        <p>Hehe... searching for me??</p>
+    </div>
+    <h1>I am a <i>strong</i> person and I'm <i>strong</i> enough to lift the <i>strong</i> person.</h1>
+    <div class="arena">
+        <p class="intro">I<q lang="no"> am a </q><i>strong</i> person </q> and I'm <i>strong</i> enough to lift the <i>strong</i> person. Here the first line will be in different color with quotes and other styles which are implemented internally</p>
+    </div>
+</body>
+</html>
