@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="selectors.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started With Selectors</title>
+    <style>
+            body{
+            background-color: black;
+            }
+            p {
+            color: white;
+            text-align: center;
+            }
+            #Id_selectors{
+            color:yellow;
+            text-align: right;
+            }
+            .center{
+            color:aqua;
+            }
+            p.center{
+            color: red;
+            text-align: center;
+            }
+            p.large{
+            font-size: 300%;
+            }
+    </style>
+</head>
+<body>
+    <!--Simple Selectors(select elements based on name, id, class)-->
+    <p>Getting Know With Selectors</p>
+    <!--Id Selectors-->
+    <p id="Id_selectors">This is an ID selectors</p>
+    <!--Class Selectors-->
+    <h1 class="center">Here has the Class Selectors</h1>
+    <p class="center">P with class Center</p>
+    <!--p element will be styled according to class="center" and to class="large":-->
+    <p class="center large">p element will be styled according to class="center" and to class="large"</p>
+</body>
+</html>
