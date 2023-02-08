@@ -1,0 +1,26 @@
+/*Parent Properties*/
+.container{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    width: 450px;
+    flex-direction:row;/*row-reverse|row|column|column-reverse*/
+    flex-wrap:wrap;/*wrap|nowrap|wrap-reverse*/
+    justify-content:flex-start;/*flex-start|flex-end|space-around|center|space-between*/
+
+}
+
+/*Child Properties*/
+.box{
+    padding: 30px;
+    margin: 10px;
+    font-size: 25px;
+}
+.box:nth-of-type(even){            
+    background-color: blue;
+    color: white;
+}
+.box:nth-of-type(odd){
+    background-color: black;
+    color: white;
+}

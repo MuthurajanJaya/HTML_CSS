@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Flex-Grow and Shrink</title>
+    <style>
+        /*Flex-Grow*/
+        .container{
+            border: 1px solid red;
+            width: 1000px;
+            display: flex;
+        }
+        .box{
+            margin: 1px;
+            flex-grow: 1;
+        }
+        .box:nth-child(2){
+            flex-grow: 2;
+        }
+        
+        /*Flex-Shrink*/
+        .container1{
+            border: 1px solid red;
+            padding: 0;
+            width: 400px;
+            display: flex;
+        }
+        .box1{
+            padding: 1px;
+            font-size: 25px;
+            width: 200px;
+            margin: 1px;
+            text-align: center;
+        }
+        .box1:nth-of-type(even){            
+            background-color: blue;
+            color: white;
+        }
+        .box1:nth-of-type(odd){
+            background-color: black;
+            color: white;
+        }
+        .box1:nth-child(2){
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex-Grow</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <hr>
+    <h2>Flex-Shrink</h2>
+    <div class="container1">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+</body>
+</html>
