@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(background_image.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(background.jpg);
     background-position: center;
     background-size:cover;
 }
@@ -70,7 +70,7 @@ ul:hover li a:not(:hover){
     height: 100%;
 }
 
-.content{
+.context{
     width: 100vh;
     height: 100vh;
     margin: auto;
@@ -79,7 +79,7 @@ ul:hover li a:not(:hover){
     margin-bottom: 10px;
 }
 
-.content .par{
+.context .par{
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -90,14 +90,14 @@ ul:hover li a:not(:hover){
     line-height: 30px;
 }
 
-.content h1{
+.context h1{
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
     margin-top: 60px;
     letter-spacing: 2px;
 }
-.content .cn{
+.context .cn{
     width: 160px;
     height: 40px;
     background: #aa2aa5;
@@ -109,7 +109,7 @@ ul:hover li a:not(:hover){
     cursor: pointer;
     transition: .9s ease;
 }
-.content .cn a{
+.context .cn a{
     text-decoration: none;
     color: white;
     transition: .9s ease;
@@ -119,11 +119,11 @@ ul:hover li a:not(:hover){
     background-color: black;
 }
 
-.content span{
+.context span{
     color: #aa2aa5;
     font-size: 65px
 }
-.content > p{
+.context > p{
     width: 600px;
 }
 .Copyrights{
